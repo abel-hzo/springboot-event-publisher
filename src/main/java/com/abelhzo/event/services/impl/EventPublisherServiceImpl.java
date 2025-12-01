@@ -52,7 +52,7 @@ public class EventPublisherServiceImpl implements EventPublisherService {
 
 		applicationEventPublisher.publishEvent(new Event<Map<String, Object>>(map));
 
-		return new ResponseEntity<String>("Mensaje Entregado!!!", HttpStatus.OK);
+		return new ResponseEntity<String>("Mensaje Entregado!!!\n", HttpStatus.OK);
 
 	}
 

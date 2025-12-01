@@ -44,7 +44,7 @@ public class EventHandler {
 		}
 
 		logger.info("\nHandle 01: " + new ObjectMapper()
-				.registerModule(new JavaTimeModule())
+				.registerModule(new JavaTimeModule())  // Evita: Java 8 date/time type `java.time.LocalDateTime` not supported by default
 				.writerWithDefaultPrettyPrinter()
 				.writeValueAsString(event));
 
@@ -65,7 +65,7 @@ public class EventHandler {
 		}
 
 		logger.info("\nHandle 02: " + new ObjectMapper()
-				.registerModule(new JavaTimeModule())
+				.registerModule(new JavaTimeModule())  // Evita: Java 8 date/time type `java.time.LocalDateTime` not supported by default
 				.writerWithDefaultPrettyPrinter()
 				.writeValueAsString(event));
 
